@@ -22,4 +22,4 @@ jobs:
         with:
           destination_branch: "main"
           pr_title: ${{ steps.commit.outputs.message }}
-          pr_reviewer: "volantebjb"
+          
