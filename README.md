@@ -36,5 +36,11 @@ COMPLETIONS_MODEL = "YOUR_COMPLETIONS_MODEL_NAME"
 
 Install the required Python libraries using:
 ```python
-pip install azure-cognitiveservices-speech openai
+pip install python-dotenv openai azure-cognitiveservices-speech
 ```
+
+## Usage
+1. Place your interview audio file (in WAV format) in the specified data directory (../data/sample.wav).
+2. Run the provided notebook.
+3. The script will transcribe the audio file using Azure Speech SDK and extract the interview text.
+4. The transcribed text is then used as a prompt for OpenAI's GPT-3.5 Turbo to generate additional content related to the interview questions.
