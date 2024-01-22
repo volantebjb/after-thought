@@ -40,7 +40,8 @@ pip install python-dotenv openai azure-cognitiveservices-speech
 ```
 
 ## Usage
-1. Place your interview audio file (in WAV format) in the specified data directory (../data/sample.wav).
-2. Run the provided notebook.
-3. The script will transcribe the audio file using Azure Speech SDK and extract the interview text.
-4. The transcribed text is then used as a prompt for OpenAI's GPT-3.5 Turbo to generate additional content related to the interview questions.
+1. Ensure that the audio file path (`filename`) is correctly set. 
+2. Run the notebook (`ipynb` file).
+3. The script uses Azure Cognitive Services Speech SDK to transcribe speech to text.
+4. The transcribed text is then processed using OpenAI GPT for completion.
+5. The final result is a list of interview questions generated based on the transcribed audio.
